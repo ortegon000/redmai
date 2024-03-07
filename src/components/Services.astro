@@ -1,0 +1,72 @@
+---
+import { Image } from "astro:assets";
+import Service1Image from "../../public/images/service-1.jpg";
+import Service2Image from "../../public/images/service-2.jpg";
+import Service3Image from "../../public/images/service-3.jpg";
+---
+
+<section class="py-12">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+        <h2 class="uppercase text-4xl font-bold text-red-600 text-center">
+            Servicios
+        </h2>
+        <p class="text-center text-gray-500 mt-4">
+            Nos adaptamos a las necesodades y deseos específicos de cada
+            cliente. <br />
+            Personalizamos cada evento para que sea único.
+        </p>
+
+        <div class="mt-12 md:flex md:gap-4 md:items-start">
+            <article class="">
+                <figure
+                    class="w-full h-96 md:h-48 lg:h-64 overflow-hidden group"
+                >
+                    <Image
+                        src={Service1Image}
+                        alt="imagen sobre servicio 1"
+                        class="w-full h-auto group-hover:scale-110 transition"
+                    />
+                </figure>
+                <div
+                    class="bg-black text-white text-center py-12 text-3xl font-bold"
+                >
+                    <h3>Contenido <br /> Audiovisual</h3>
+                </div>
+            </article>
+
+            <article class="mt-4 md:mt-0">
+                <figure
+                    class="w-full h-96 md:h-48 lg:h-64 overflow-hidden group"
+                >
+                    <Image
+                        src={Service2Image}
+                        alt="imagen sobre servicio 1"
+                        class="w-full h-auto group-hover:scale-110 transition"
+                    />
+                </figure>
+                <div
+                    class="bg-black text-white text-center py-12 text-3xl font-bold"
+                >
+                    <h3>Eventos</h3>
+                </div>
+            </article>
+
+            <article class="mt-4 md:mt-0">
+                <figure
+                    class="w-full h-96 md:h-48 lg:h-64 overflow-hidden group"
+                >
+                    <Image
+                        src={Service3Image}
+                        alt="imagen sobre servicio 1"
+                        class="w-full h-auto group-hover:scale-110 transition"
+                    />
+                </figure>
+                <div
+                    class="bg-black text-white text-center py-12 text-3xl font-bold"
+                >
+                    <h3>Desarrollo <br /> Web</h3>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
