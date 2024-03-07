@@ -1,0 +1,106 @@
+---
+import Image from "astro/components/Image.astro";
+import Logo from "/public/images/logo-red-full.png";
+---
+
+<header class="py-4 bg-white text-gray-500">
+    <div
+        class="max-w-6xl relative px-4 md:px-6 mx-auto flex items-center justify-between"
+    >
+        <figure class="h-16">
+            <Image src={Logo} alt="logo redmai" class="h-full w-auto" />
+        </figure>
+        <nav x-data="{openMenu:false}">
+            <!-- Desktop menu -->
+            <ul class="hidden md:flex md:gap-8 uppercase">
+                <li class="font-bold">
+                    <a
+                        href="#"
+                        class="py-2 hover:text-red-500 transition inline-block"
+                        >Home</a
+                    >
+                </li>
+                <li class="font-bold">
+                    <a
+                        href="#"
+                        class="py-2 hover:text-red-500 transition inline-block"
+                        >Nosotros</a
+                    >
+                </li>
+                <li class="font-bold">
+                    <a
+                        href="#"
+                        class="py-2 hover:text-red-500 transition inline-block"
+                        >Servicios</a
+                    >
+                </li>
+                <li class="font-bold">
+                    <a
+                        href="#"
+                        class="py-2 hover:text-red-500 transition inline-block"
+                        >Contacto</a
+                    >
+                </li>
+            </ul>
+
+            <!-- Mobile menu -->
+            <div class="md:hidden">
+                <ul
+                    class="absolute left-0 right-0 top-full mt-2 w-[90%] mx-auto p-4 bg-gray-100 rounded-md shadow uppercase"
+                    x-cloak
+                    x-show="openMenu"
+                    x-transition
+                >
+                    <li class="font-bold">
+                        <a
+                            href="#"
+                            class="py-2 hover:text-red-500 transition inline-block"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="font-bold mt-4">
+                        <a
+                            href="#"
+                            class="py-2 hover:text-red-500 transition inline-block"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li class="font-bold mt-4">
+                        <a
+                            href="#"
+                            class="py-2 hover:text-red-500 transition inline-block"
+                            >Servicios</a
+                        >
+                    </li>
+                    <li class="font-bold mt-4">
+                        <a
+                            href="#"
+                            class="py-2 hover:text-red-500 transition inline-block"
+                            >Contacto</a
+                        >
+                    </li>
+                </ul>
+
+                <button
+                    @click="openMenu = !openMenu"
+                    @click.away="openMenu=false"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-8 h-8"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
