@@ -3,9 +3,9 @@ import Image from "astro/components/Image.astro";
 import Logo from "/public/images/logo-gray-full.png";
 ---
 
-<header class="py-4 bg-white text-gray-500">
+<header class="py-4 bg-white text-gray-500 fixed w-full z-50">
     <div
-        class="max-w-6xl relative px-4 md:px-6 mx-auto flex items-center justify-between z-50"
+        class="max-w-6xl relative px-4 md:px-6 mx-auto flex items-center justify-between"
     >
         <figure class="h-16">
             <Image src={Logo} alt="logo redmai" class="h-full w-auto" />
@@ -15,28 +15,28 @@ import Logo from "/public/images/logo-gray-full.png";
             <ul class="hidden md:flex md:gap-8 uppercase">
                 <li class="font-bold">
                     <a
-                        href="#"
+                        href="#home"
                         class="py-2 hover:text-red-600 transition inline-block"
                         >Home</a
                     >
                 </li>
                 <li class="font-bold">
                     <a
-                        href="#"
-                        class="py-2 hover:text-red-600 transition inline-block"
-                        >Nosotros</a
-                    >
-                </li>
-                <li class="font-bold">
-                    <a
-                        href="#"
+                        href="#services"
                         class="py-2 hover:text-red-600 transition inline-block"
                         >Servicios</a
                     >
                 </li>
                 <li class="font-bold">
                     <a
-                        href="#"
+                        href="#objective"
+                        class="py-2 hover:text-red-600 transition inline-block"
+                        >Nosotros</a
+                    >
+                </li>
+                <li class="font-bold">
+                    <a
+                        href="#footer"
                         class="py-2 hover:text-red-600 transition inline-block"
                         >Contacto</a
                     >
@@ -53,28 +53,28 @@ import Logo from "/public/images/logo-gray-full.png";
                 >
                     <li class="font-bold">
                         <a
-                            href="#"
+                            href="#home"
                             class="py-2 hover:text-red-600 transition inline-block"
                             >Home</a
                         >
                     </li>
                     <li class="font-bold mt-4">
                         <a
-                            href="#"
-                            class="py-2 hover:text-red-600 transition inline-block"
-                            >Nosotros</a
-                        >
-                    </li>
-                    <li class="font-bold mt-4">
-                        <a
-                            href="#"
+                            href="#services"
                             class="py-2 hover:text-red-600 transition inline-block"
                             >Servicios</a
                         >
                     </li>
                     <li class="font-bold mt-4">
                         <a
-                            href="#"
+                            href="#objective"
+                            class="py-2 hover:text-red-600 transition inline-block"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li class="font-bold mt-4">
+                        <a
+                            href="#footer"
                             class="py-2 hover:text-red-600 transition inline-block"
                             >Contacto</a
                         >

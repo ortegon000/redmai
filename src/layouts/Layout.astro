@@ -19,7 +19,7 @@ const { title } = Astro.props;
 		<link rel="canonical" href="https://redmai.com.mx" />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body id="home">
 		<Header />
 
 		<slot />
@@ -29,6 +29,10 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+	html,
+	body {
+		scroll-behavior: smooth;
+	}
 	[x-cloak] {
 		display: none !important;
 	}
