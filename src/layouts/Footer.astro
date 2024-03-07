@@ -1,6 +1,6 @@
 ---
 import Image from "astro/components/Image.astro";
-import Logo from "/public/images/logo-gray-full.png";
+import Logo from "/public/images/logo.svg";
 ---
 
 <section class="pb-12 objective" id="footer">
@@ -22,16 +22,29 @@ import Logo from "/public/images/logo-gray-full.png";
                 </a>
 
                 <a
-                    href="https://wa.link/bp8p4n"
+                    href="mailto:contacto@redmai.com.mx"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="bg-gray-500 p-2 inline-block rounded-full ml-2 hover:scale-110 transition"
                 >
-                    <img
-                        src="/images/whatsapp.svg"
-                        alt="whatsapp logo"
-                        class="h-6 w-6"
-                    />
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-at h-6 w-6"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="white"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"
+                        ></path>
+                        <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"
+                        ></path>
+                        <path
+                            d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"
+                        ></path>
+                    </svg>
                 </a>
             </div>
 
@@ -40,4 +53,17 @@ import Logo from "/public/images/logo-gray-full.png";
             </figure>
         </div>
     </div>
+
+    <a
+        href="https://wa.link/bp8p4n"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="fixed left-2 bottom-2 shadow-md shadow-green-700 p-2 rounded-full bg-[#25D366] group"
+    >
+        <img
+            src="/images/whatsapp.svg"
+            alt="instagram logo"
+            class="h-8 w-8 group-hover:h-12 group-hover:w-12 transition-all"
+        />
+    </a>
 </section>
