@@ -1,0 +1,43 @@
+---
+import Image from "astro/components/Image.astro";
+import Logo from "/public/images/logo-gray-full.png";
+---
+
+<section class="pb-12 objective">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+        <h3 class="text-xl font-bold">Contáctanos</h3>
+        <div class="flex items-top justify-between">
+            <div class="mt-2">
+                <a
+                    href="https://www.instagram.com/redmaistudio?igsh=MWFkempkNHlyY29neA%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-gray-500 p-2 inline-block rounded-full hover:scale-110 transition"
+                >
+                    <img
+                        src="/images/instagram.svg"
+                        alt="instagram logo"
+                        class="h-6 w-6"
+                    />
+                </a>
+
+                <a
+                    href="https://wa.link/bp8p4n"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-gray-500 p-2 inline-block rounded-full ml-2 hover:scale-110 transition"
+                >
+                    <img
+                        src="/images/whatsapp.svg"
+                        alt="whatsapp logo"
+                        class="h-6 w-6"
+                    />
+                </a>
+            </div>
+
+            <figure class="h-16">
+                <Image src={Logo} alt="logo redmai" class="h-full w-auto" />
+            </figure>
+        </div>
+    </div>
+</section>
