@@ -1,16 +1,16 @@
-<section class="py-32 hero relative" id="hero">
+<section class="py-48 hero relative" id="hero">
     <div class="max-w-6xl relative px-4 md:px-6 mx-auto">
         <article class="text-white">
-            <h1 class="uppercase text-4xl font-bold">
+            <h1 class="uppercase text-4xl drop-shadow md:text-5xl font-bold">
                 La mejor manera <br />
                 de predecir el futuro <br />
                 <span class="text-red-600">es crearlo</span>
             </h1>
 
-            <div class="max-w-md mt-12 text-xl">
+            <div class="max-w-lg mt-12 text-xl md:text-2xl drop-shadow">
                 <h2 class="text-balance">
-                    REDMAI es un estudio, en donde nos especializamos en ser
-                    creadores de contenido.
+                    <strong>REDMAI</strong> es un estudio, en donde nos especializamos
+                    en ser <strong>creadores de contenido.</strong>
                 </h2>
                 <p class="text-balance mt-4">
                     Contamos con las herramientas necesarias para satisfacer las
@@ -54,14 +54,26 @@
     .hero {
         background-image: linear-gradient(
                 to left,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.8)
             ),
             url("/images/hero.jpg"),
             linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
         background-position: 100% 50%;
         background-repeat: no-repeat;
         background-attachment: fixed;
+    }
+
+    @media (min-width: 768px) {
+        .hero {
+            background-image: linear-gradient(
+                    to left,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                ),
+                url("/images/hero.jpg"),
+                linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+        }
     }
 
     @keyframes animateBackground {
